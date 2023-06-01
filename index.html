@@ -11,35 +11,60 @@
 
 <body>
     <main class="container">
-            <div class="text">
-                <h1>[Ebook] Guia do HTML e CSS</h1>
-                <h4>Dê seus primeiros passos com o desenvolvimento Web e aprenda a criar uma página do ZERO!</h4>
-                <img src="./assets/css/image_guia.png" alt="" class="imagem-form">
-            </div>
+        <div class="text">
+            <h1 class="title">[Ebook] Guia do HTML e CSS</h1>
+            <h2 class="subtitle">Dê seus primeiros passos com o desenvolvimento Web e aprenda a criar uma página do
+                ZERO!</h2>
+            <img class="imagem-form" src="./assets/css/image_guia.png" alt="">
+        </div>
         <section>
             <form class="form">
-                <h3>Faça o download grátis aqui</h3>
-                <h4>Preencha o formulário abaixo para acessar o ebook.</h4>
-                <label for="name">Nome*:</label>
-                <br>
-                <input type="text" placeholder="Digite seu nome aqui." id="name" name="name">
-                <br><br>
-                <label for="mail">Email*:</label>
-                <br>
-                <input type="email" placeholder="Digite seu email aqui." id="mail" name="mail">
-                <br><br>
-                <label for="job">Profissionalmente, você se considera:*</label>
-                <br>
-                <select name="job" id="job">
-                    <option value="valor1">Trainee</option>
-                    <option value="valor2">Júnior</option>
-                    <option value="valor3">Pleno</option>
-                    <option value="valor4">Sênior</option>
-                </select>
-                <br><br>
-
+                <div class="campo-form">
+                    <div>
+                        <h2 class="form-title">Faça o download grátis aqui</h2>
+                        <p class="form-subtitle">Preencha o formulário abaixo para acessar o ebook.</p>
+                    </div>
+                </div>
+                <div class="campo-form">
+                    <label for="name">Nome*:</label>
+                    <input type="text" placeholder="Digite seu nome aqui." id="name" name="name">
+                </div>
+                <div class="campo-form">
+                    <label for="mail">Email*:</label>
+                    <input type="email" placeholder="Digite seu email aqui." id="mail" name="mail">
+                </div>
+                <div class="campo-form">
+                    <label for="job">Profissionalmente, você se considera:*</label>
+                    <select name="job" id="job">
+                        <option value="valor1">Trainee</option>
+                        <option value="valor2">Júnior</option>
+                        <option value="valor3">Pleno</option>
+                        <option value="valor4">Sênior</option>
+                    </select>
+                </div>
+                <div class="campo-form">
+                    <label>Você gostaria de receber news sobre TI, Negócios e Inovação?*</label>
+                    <div>
+                        <input type="checkbox" id="Sim" name="checkbox" value="Sim" required>
+                        <label for="Sim">Sim</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Não" name="checkbox" value="Não" required>
+                        <label for="Não">Não</label>
+                    </div>
+                </div>
+                <div class="campo-form">
+                    <label for="calculo">8 + 2 = ?</label>
+                    <input type="text" placeholder="Informe aqui o resultado.">
+                </div>
+                <div class="validar">
+                    <input type="checkbox" id="validar" name="checkbox" value="validar" required>
+                    <label for="Sim">Eu concordo em receber as comunicações.</label>
+                </div>
+                <div class="campo-form">
+                    <input class="botao" type="button" id="acesso" name="acesso" value="Acessar Ebook agora!">
+                </div>
             </form>
-
         </section>
     </main>
 </body>
